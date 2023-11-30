@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crew Events - Event Services</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/templatemo-chain-app-dev.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <style>
+        /* Custom CSS styles */
+        .header-area {
+            background-color: #fff; /* Adjust background color as needed */
+            padding: 20px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow as needed */
+        }
+
+        .logo {
+            object-fit: fill;
+            opacity: inherit;
+            padding: 0%;
+            inline-size: 120px;
+            text-decoration-color: black;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Set a medium height for the images within the thumbnails */
+        .thumbnail img {
+            max-height: 70%;
+            width: 70%;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+
+        /* Center the thumbnail box within the column */
+        .thumbnail {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 15px;
+            background-color: #ecf0f1;
+            transition: background-color 0.3s ease;
+        }
+
+        .thumbnail:hover {
+            background-color: #d2d7d3;
+        }
+
+        /* Adjust caption style */
+        .caption {
+            margin-top: 10px;
+        }
+
+        h3 {
+            color: #2c3e50;
+        }
+
+        p {
+            color: #555;
+        }
+
+        /* Adjust button style */
+        .btn {
+            margin-top: 10px;
+        }
+
+        /* Search bar styles */
+        .search-container {
+            display: flex;
+            align-items:center;
+            margin-bottom: 20px;
+        }
+        #search-label{
+            content: search;
+        }
+
+        #search-input {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            outline: none; /* Remove input outline */
+            transition: border-color 0.3s ease; /* Add smooth transition */
+        }
+
+        #search-input:focus {
+            border-color: #3498db; /* Change border color on focus */
+        }
+
+        #search-icon {
+            margin-left: -40px;
+            cursor: pointer;
+            color: #555;
+            transition: color 0.3s ease; /* Add smooth transition */
+        }
+
+        #search-icon:hover {
+            color: #3498db; /* Change icon color on hover */
+        }
+        .main-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .nav {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav li {
+            margin-right: 20px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .nav a:hover {
+            color: #3498db;
+        }
+
+        .menu-trigger {
+            display: none; /* Hide the menu trigger initially for larger screens */
+        }
+
+        /* Responsive Styles */
+        @media only screen and (max-width: 768px) {
+            .nav {
+                display: none;
+                flex-direction: column;
+                text-align: center;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                right: 0;
+                background-color: #fff; /* Adjust background color as needed */
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow as needed */
+            }
+
+            .nav.show {
+                display: flex;
+            }
+
+            .nav li {
+                margin: 10px 0;
+            }
+
+            .menu-trigger {
+                display: block;
+                cursor: pointer;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="i">
+                        <!-- Logo Start -->
+                        <a href="file:///D:/new project/n.html" class="logo">
+                            <img class="logo" src="file:///D:/new project/assets/images/logo main.png" >
+                            
+                        </a>
+                        <!-- Logo End -->
+                        <!-- Menu Start -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="file:///D:/new project/project(event management).html.html" class="active">Home</a></li>
+                            <li class="scroll-to-section"><a href="thumbnailss.html">Services</a></li>
+                            <li class="scroll-to-section"><a href="file:///D:/new project/about.html">About</a></li>
+                            <li class="scroll-to-section"><a href="file:///D:/new project/contactus.html">Contact Us</a></li>
+                            
+                        </ul>
+                        
+                        <!-- Menu End -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+    <div class="container">
+        <!-- Heading for Event Services -->
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>Event Services</h1>
+            </div>
+        </div>
+
+        <!-- Search Container -->
+        <div class="row search-container">
+            <input id="search-input" type="search" class="form-control" placeholder="Search for events..." oninput="filterEvents()">
+            <i id="search-icon" class="fas fa-search fa-lg"></i>
+        </div>
+
+        <!-- Thumbnails -->
+        <div class="row" id="thumbnailsContainer">
+            <!-- Thumbnail 1: Party -->
+            <div class="col-lg-12">
+                <div class="thumbnail">
+                    <img src="wp7488230-corporate-event-wallpapers.jpg" alt="feather">
+                    <div class="caption">
+                        <h3>Party</h3>
+                        <p>Birthdays and Company Parties</p>
+                        <p>
+                            <!-- Button to trigger the payment modal -->
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#paymentModal" data-event="Party">Buy for $150</button>
+                            <button class="btn btn-success" onclick="showPaymentModal('Party', '$150')">Add to Watch List</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thumbnail 2: Food -->
+            <div class="col-lg-12">
+                <div class="thumbnail">
+                    <img src="wp7488391-corporate-event-wallpapers.jpg" alt="Food">
+                    <div class="caption">
+                        <h3>Food</h3>
+                        <p>All types of food</p>
+                        <p>
+                            <button class="btn btn-primary" onclick="addToWishlist('Food', '$130')">Buy for $130</button>
+                            <button class="btn btn-success" onclick="showPaymentModal('Food', '$130')">Add to Watch List</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thumbnail 3: Marriage -->
+            <div class="col-lg-12">
+                <div class="thumbnail">
+                    <img src="wp10715834-event-management-wallpapers.jpg" alt="Marriage">
+                    <div class="caption">
+                        <h3>Marriage</h3>
+                        <p>We accept all types of marriage functions</p>
+                        <p>
+                            <button class="btn btn-primary" onclick="addToWishlist('Marriage', '$120')">Buy for $120</button>
+                            <button class="btn btn-success" onclick="showPaymentModal('Marriage', '$120')">Add to Watch List</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thumbnail 4: Music Concert -->
+            <div class="col-lg-12">
+                <div class="thumbnail">
+                    <img src="4.jpg" alt="Music Concert">
+                    <div class="caption">
+                        <h3>Music Concert</h3>
+                        <p>Concert</p>
+                        <p>
+                            <button class="btn btn-primary" onclick="addToWishlist('Music Concert', '$190')">Buy for $190</button>
+                            <button class="btn btn-success" onclick="showPaymentModal('Music Concert', '$190')">Add to Watch List</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thumbnail 5: Dance -->
+            <div class="col-lg-12">
+                <div class="thumbnail">
+                    <img src="wp10715816-event-management-wallpapers.jpg" alt="Dance">
+                    <div class="caption">
+                        <h3 >Dance</h3>
+                        <p>Dance competition</p>
+                        <p>
+                            <button class="btn btn-primary" onclick="addToWishlist('Dance', '$180')">Buy for $180</button>
+                            <button class="btn btn-success" onclick="showPaymentModal('Dance', '$180')">Add to Watch List</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add a modal for the payment form -->
+        <div class="modal fade" id="paymentModal" tabindex="-1" role="dialog" aria-labelledby="paymentModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="paymentModalLabel">Payment Form</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Payment form content goes here -->
+                        <div class="form-group">
+                            <label for="paymentType">Payment Type:</label>
+                            <select class="form-control" id="paymentType" onchange="togglePaymentFields()" required>
+                                <option value="card">Card</option>
+                                <option value="upi">UPI</option>
+                            </select>
+                        </div>
+            
+                        <!-- Custom Amount -->
+                        <div class="form-group" id="customAmountGroup" style="display: none;">
+                            <label for="customAmount">Custom Amount:</label>
+                            <input type="text" class="form-control" id="customAmount" placeholder="Enter Custom Amount">
+                            <span class="error-message" id="customAmountError"></span>
+                        </div>
+            
+                        <!-- Card Details -->
+                        <div class="form-group">
+                            <label for="cardNumber">Card Number:</label>
+                            <input type="text" class="form-control" id="cardNumber" placeholder="Enter Card Number" required>
+                            <span class="error-message" id="cardNumberError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="cvv">CVV:</label>
+                            <input type="text" class="form-control" id="cvv" placeholder="Enter CVV" required>
+                            <span class="error-message" id="cvvError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="cardHolderName">Card Holder Name:</label>
+                            <input type="text" class="form-control" id="cardHolderName" placeholder="Enter Card Holder Name" required>
+                            <span class="error-message" id="cardHolderNameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="expiryDetails">Card Expiry Details:</label>
+                            <input type="text" class="form-control" id="expiryDetails" placeholder="Enter Expiry Details" required>
+                            <span class="error-message" id="expiryDetailsError"></span>
+                        </div>
+            
+                        <!-- UPI ID -->
+                        <div class="form-group" id="upiIdGroup" style="display: none;">
+                            <label for="upiId">UPI ID:</label>
+                            <input type="text" class="form-control" id="upiId" placeholder="Enter UPI ID">
+                            <span class="error-message" id="upiIdError"></span>
+                        </div>
+            
+                        <!-- Phone Number -->
+                        <div class="form-group">
+                            <label for="phoneNumber">Phone Number:</label>
+                            <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter Phone Number" required>
+                            <span class="error-message" id="phoneNumberError"></span>
+                        </div>
+            
+                        <!-- Bill Amount -->
+                        <div class="form-group">
+                            <label for="billAmount">Bill Amount:</label>
+                            <input type="text" class="form-control" id="billAmount" readonly>
+                        </div>
+                            <!-- Add other payment form fields as needed -->
+                            <button type="submit" class="btn btn-primary">Submit Payment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            function filterEvents() {
+                var input, filter, thumbnails, thumbnail, title, i;
+                input = document.getElementById("search-input");
+                filter = input.value.toUpperCase();
+                thumbnails = document.getElementById("thumbnailsContainer").getElementsByClassName("thumbnail");
+
+                for (i = 0; i < thumbnails.length; i++) {
+                    title = thumbnails[i].getElementsByTagName("h3")[0];
+                    if (title.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                        thumbnails[i].style.display = "";
+                    } else {
+                        thumbnails[i].style.display = "none";
+                    }
+                }
+            }
+
+            // Handle modal show event
+            $('#paymentModal').on('show.bs.modal', function (event) {
+                var button = $(event.relatedTarget); // Button that triggered the modal
+                var eventName = button.data('event'); // Extract event name from data attribute
+                var modal = $(this);
+
+                // Set the event name in the modal
+                modal.find('#eventName').val(eventName);
+            });
+
+            // Handle form submission
+            $('#paymentForm').submit(function (event) {
+                event.preventDefault();
+                var cardNumber = $('#cardNumber').val();
+                alert('Payment submitted successfully!\nCard Number: ' + cardNumber);
+                $('#paymentModal').modal('hide');
+            });
+            function buyButtonClick(eventName, amount) {
+            // Set event name and amount in the payment form
+            $('#eventName').val(eventName);
+            $('#billAmount').val('$' + amount);
+
+            // Show the payment modal
+            $('#paymentModal').modal('show');
+            }
+        </script>
+        
+    </body>
+</html>
